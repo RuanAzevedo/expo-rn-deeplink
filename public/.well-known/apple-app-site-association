@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "P4G624Q9ZA.com.ruan.deeplink",
+        "paths": [
+          "*"
+        ]
+      }
+    ]
+  }
+}
