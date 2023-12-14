@@ -29,14 +29,17 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ruan.deeplink"
+      "bundleIdentifier": "com.ruan.deeplink",
+      "associatedDomains": [
+        "applinks:inquisitive-peony-d98692.netlify.app"
+      ]
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.ruan.ae.deeplink"
+      "package": "com.ruan.deeplink"
     }
   }
 }
