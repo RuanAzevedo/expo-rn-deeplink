@@ -1,15 +1,21 @@
 import { useLocalSearchParams } from 'expo-router';
+import Head from 'expo-router/head';
 import { StyleSheet, View, Text } from 'react-native';
 
 export default function Details() {
   const { name } = useLocalSearchParams();
   return (
-    <View style={styles.container}>
-      <View style={styles.main}>
-        <Text style={styles.title}>Details</Text>
-        <Text style={styles.subtitle}>Showing details for user {name}.</Text>
+    <>
+      <Head>
+        <title>My Details for {name}</title>
+      </Head>
+      <View style={styles.container}>
+        <View style={styles.main}>
+          <Text style={styles.title}>Details</Text>
+          <Text style={styles.subtitle}>Showing details for user {name}.</Text>
+        </View>
       </View>
-    </View>
+    </>
   );
 }
 
